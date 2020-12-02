@@ -28,3 +28,50 @@
     container.style.animation = `rotateY 1s`;
     
   }
+
+
+
+    function rotatingCube(){
+        var n = numberArray[Math.floor(Math.random() * 8)]
+    
+       controledNumber = n  
+      console.log(controledNumber)
+
+        let rotateCube = rotateSides[Math.floor(Math.random() * rotateSides.length)]
+        if(rotateCube != rotor) {
+            rotor = rotateCube
+
+            container.style.animation = `rotate${rotateCube} 1s`;
+
+            
+        }else {
+
+            let indexMinus = rotateSides.indexOf(rotateCube)
+       
+
+            if (indexMinus == 1) {
+
+                rotor = rotateSides[indexMinus - 1]
+                container.style.animation = `rotate${rotor} 1s`;
+
+            }else {
+
+                rotor = rotateSides[indexMinus + 1]
+                container.style.animation = `rotate${rotor} 1s`;
+
+            }
+              
+        }
+        
+    
+
+        // Animation 3D Cube
+        cssAnimation.type = 'text/css';
+        var rules = document.createTextNode('@keyframes rotateX {100% {transform: rotateX(' + n + 'deg);}}' +
+                                            
+                                            '@keyframes rotateZ {100% { transform: rotateZ(' + n + 'deg);}}');
+                                                                                                        
+        cssAnimation.appendChild(rules);
+        document.getElementsByTagName("head")[0].appendChild(cssAnimation);
+    }
+    
