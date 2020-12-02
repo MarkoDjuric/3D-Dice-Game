@@ -2,10 +2,7 @@
 
     var style = document.querySelector("link[href='style.css']").sheet.CSSRules;
 
-    var cssAnimation = document.createElement('style');
-    //let rotatingBtn = document.getElementById("rotate")
-    //var face = document.getElementById('face')
-    //var roof = document.getElementById('roof')
+    let cssAnimation = document.createElement('style');
     let resetBtn = document.getElementById('reset');
     let rollingBtn = document.getElementById("roll");
     let rotateSides = ['X','Z'];
