@@ -1,6 +1,6 @@
 
 
-    var style = document.querySelector("link[href='style.css']").sheet.CSSRules;
+    let style = document.querySelector("link[href='style.css']").sheet.CSSRules;
 
     const cssAnimation = document.createElement('style');
     const resetBtn = document.getElementById('reset');
@@ -9,12 +9,13 @@
     const numberArray = [ 270, 360, 450, 540, 630, 720, 810, 900];
     const container = document.querySelector('.container');
     let rotor = '';
-    var rand = 0;
-    var controledNumber = 0;
+    let rand = 0;
+    let controledNumber = 0;
     // tracking score and chanses for rolling
-    var humanScore = 0;
-    var computerScore = 0;
-    var humanGameOver = 0;
+    let humanScore = 0;
+    let computerScore = 0;
+    let humanGameOver = 0;
+
 
   function rotateY(){
     rand = numberArray[Math.floor(Math.random() * 8)];
