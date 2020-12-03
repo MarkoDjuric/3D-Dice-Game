@@ -2,12 +2,12 @@
 
     var style = document.querySelector("link[href='style.css']").sheet.CSSRules;
 
-    let cssAnimation = document.createElement('style');
-    let resetBtn = document.getElementById('reset');
-    let rollingBtn = document.getElementById("roll");
-    let rotateSides = ['X','Z'];
-    let numberArray = [ 270, 360, 450, 540, 630, 720, 810, 900];
-    let container = document.querySelector('.container');
+    const cssAnimation = document.createElement('style');
+    const resetBtn = document.getElementById('reset');
+    const rollingBtn = document.getElementById("roll");
+    const rotateSides = ['X','Z'];
+    const numberArray = [ 270, 360, 450, 540, 630, 720, 810, 900];
+    const container = document.querySelector('.container');
     let rotor = '';
     var rand = 0;
     var controledNumber = 0;
