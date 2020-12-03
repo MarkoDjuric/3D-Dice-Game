@@ -75,4 +75,55 @@
         cssAnimation.appendChild(rules);
         document.getElementsByTagName("head")[0].appendChild(cssAnimation);
     }
+
+
+
+    function scorer(){  
+        if(rotor === 'X'){
+            console.log(rotor)
+            if( controledNumber === 270){
+                 humanScore += 2
+            }else if(controledNumber === 360){
+                humanScore += 3
+            }else if(controledNumber === 450){
+                humanScore += 5
+            }else if(controledNumber === 540){
+                humanScore += 1
+            }else if(controledNumber === 630){
+                humanScore += 2
+            }else if(controledNumber === 720){
+                humanScore += 3
+            }else if(controledNumber === 810){
+                humanScore += 5
+            }else if(controledNumber === 900){
+                humanScore += 1
+            }    
+        
+        }else if(rotor === 'Z'){
+            console.log(rotor)
+            if( controledNumber === 270){
+                humanScore += 4
+            }else if(controledNumber === 360){
+                humanScore += 3
+            }else if(controledNumber === 450){
+                humanScore += 6
+            }else if(controledNumber === 540){
+                humanScore += 1
+            }else if(controledNumber === 630){
+                humanScore += 4
+               
+            }else if(controledNumber === 720){
+                humanScore += 3
+            }else if(controledNumber === 810){
+                humanScore += 6
+            }else if(controledNumber === 900){
+                humanScore += 1      
+            }
+        
+        }
+        console.log(humanScore)
+        return humanScore
+    
+    }
+
     
