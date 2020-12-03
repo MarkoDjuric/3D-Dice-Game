@@ -31,7 +31,7 @@
 
 
     function rotatingCube(){
-        var n = numberArray[Math.floor(Math.random() * 8)]
+        let n = numberArray[Math.floor(Math.random() * 8)]
     
        controledNumber = n  
       console.log(controledNumber)
