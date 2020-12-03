@@ -16,11 +16,9 @@
     let computerScore = 0;
     let humanGameOver = 0;
 
-
+//Rotating Cube along the Y axis
   function rotateY(){
     rand = numberArray[Math.floor(Math.random() * 8)];
-
-
     cssAnimation.type = 'text/css';
     var rules = document.createTextNode('@keyframes rotateY {100% {transform: rotateY(' + rand + 'deg);}}');
                                                                                                     
