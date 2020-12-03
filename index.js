@@ -20,7 +20,7 @@
   function rotateY(){
     rand = numberArray[Math.floor(Math.random() * 8)];
     cssAnimation.type = 'text/css';
-    var rules = document.createTextNode('@keyframes rotateY {100% {transform: rotateY(' + rand + 'deg);}}');
+    let rules = document.createTextNode('@keyframes rotateY {100% {transform: rotateY(' + rand + 'deg);}}');
                                                                                                     
     cssAnimation.appendChild(rules);
     document.getElementsByTagName("head")[0].appendChild(cssAnimation);
