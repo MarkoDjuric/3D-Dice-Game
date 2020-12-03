@@ -127,3 +127,18 @@
     }
 
     
+    function computerRoll(){
+        rotateY()
+        setTimeout(function(){  rotatingCube()
+        }, 500);
+    
+        setTimeout(function(){  rotatingCube()
+        }, 600);
+        setTimeout(function(){  rotatingCube()
+        }, 700);
+        setTimeout(function(){  rotatingCube()
+        }, 800);
+        setTimeout(function(){  rotatingCube()
+        }, 900);
+
+    }
