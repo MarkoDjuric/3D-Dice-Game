@@ -137,3 +137,53 @@
         }, 900);
 
     }
+
+
+
+    function scorerComputer(){  
+        if(rotor === 'X'){
+            console.log(rotor)
+            if( controledNumber === 270){
+                 computerScore += 2
+            }else if(controledNumber === 360){
+                computerScore += 3
+            }else if(controledNumber === 450){
+                computerScore += 5
+            }else if(controledNumber === 540){
+                computerScore += 1
+            }else if(controledNumber === 630){
+                computerScore += 2
+            }else if(controledNumber === 720){
+                computerScore += 3
+            }else if(controledNumber === 810){
+                computerScore += 5
+            }else if(controledNumber === 900){
+                computerScore += 1
+            }    
+        
+        }else if(rotor === 'Z'){
+            console.log(rotor)
+            if( controledNumber === 270){
+                computerScore += 4
+            }else if(controledNumber === 360){
+                computerScore += 3
+            }else if(controledNumber === 450){
+                computerScore += 6
+            }else if(controledNumber === 540){
+                computerScore += 1
+            }else if(controledNumber === 630){
+                computerScore += 4
+               
+            }else if(controledNumber === 720){
+                computerScore += 3
+            }else if(controledNumber === 810){
+                computerScore += 6
+            }else if(controledNumber === 900){
+                computerScore += 1      
+            }
+        
+        }
+        console.log(computerScore)
+        return computerScore
+    
+    }
