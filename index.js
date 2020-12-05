@@ -40,15 +40,12 @@
         if(rotateCube != rotor) {
             rotor = rotateCube
 
-            container.style.animation = `rotate${rotateCube} 1s`;
-
-            
+            container.style.animation = `rotate${rotateCube} 1s`;    
         }else {
 
             let indexMinus = rotateSides.indexOf(rotateCube)
        
-
-            if (indexMinus == 1) {
+              if (indexMinus == 1) {
 
                 rotor = rotateSides[indexMinus - 1]
                 container.style.animation = `rotate${rotor} 1s`;
