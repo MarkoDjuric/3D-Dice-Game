@@ -187,3 +187,7 @@
         return computerScore
     
     }
+
+
+    //Reset Game
+    resetBtn.addEventListener('click', () => location.reload())
