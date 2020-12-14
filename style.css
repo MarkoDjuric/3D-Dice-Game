@@ -1,0 +1,125 @@
+body {
+    perspective: 1000px;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    flex-direction: column;
+    perspective-origin: center -5em;
+    background-color: rgb(59, 51, 51);
+ 
+
+}
+html, body {
+    height: 100%;
+}
+
+#buttons{
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction:row;
+
+}
+
+#second{
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+#first{
+  
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.btns{
+    
+    width: 110px;
+    height: 44px;
+    padding:7px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+
+#reset{
+
+    margin: 1em;
+    background-color:rgb(57, 102, 197)
+}
+
+#roll{
+    margin: 1em;
+    background-color:rgb(224, 36, 36)
+   }
+
+
+
+.side,
+.container {
+    width: 10em;
+    height: 10em;
+}
+
+.side {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border: 1px solid black;
+
+}
+.back {
+    transform: translateZ(-5em);
+    background:url(img/dice-2.png)  no-repeat center;
+    background-size: cover;
+}
+.left {
+    transform: translateX(-5em) rotateY(90deg);
+    background:url(img/dice-6.png) no-repeat center;
+    background-size: cover;
+
+}
+.right {
+    transform: translateX(5em) rotateY(90deg);
+    background:url(img/dice-4.png) no-repeat center;
+    background-size: cover;
+}
+.top {
+    transform: translateY(-5em) rotateX(90deg);
+    background:url(img/dice-3.png)  no-repeat center;
+    background-size: cover;
+}
+.bottom {
+    transform: translateY(5em) rotateX(90deg);
+    background:url(img/dice-1.png) no-repeat center;
+    background-size: cover;
+}
+.front {
+    transform: translateZ(5em);
+    background: url(img/dice-5.png) no-repeat center;
+    background-size: cover;
+   
+}
+.container {
+    transform-style: preserve-3d;
+}
+
+
+.animate {
+    position: fixed;
+    top: 10px;
+    color: wheat;
+    display: flex;
+}
+.rotate {
+    padding: 30px;
+    background-color: #999;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
